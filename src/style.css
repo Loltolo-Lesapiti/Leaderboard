@@ -1,0 +1,63 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-section {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.scores-header {
+  display: flex;
+  gap: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  box-shadow: 5px 5px #000;
+}
+
+h1 {
+  margin-left: 25%;
+  margin-top: 6%;
+}
+
+footer {
+  border: 1px solid #000;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul {
+  border: solid 1px #000;
+}
+
+ul li {
+  list-style: none;
+  margin: 0;
+}
+
+ul li p {
+  text-align: start;
+}
