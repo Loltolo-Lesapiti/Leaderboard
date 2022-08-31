@@ -1,5 +1,5 @@
-const user_name=document.querySelector(".name");
-const user_score=document.querySelector(".score");
+export const user_name=document.querySelector(".name");
+export const user_score=document.querySelector(".score");
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/wTWLt5kL1D7bko98XSeZ/scores/';
 // A function to setData.
 const addPost=async()=>{
