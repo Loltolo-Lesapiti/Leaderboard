@@ -1,6 +1,6 @@
 import './style.css';
-import {getPost} from "./modules/get";
-import {addPost} from "./modules/post";
+import getPost from "./modules/get";
+import addPost from "./modules/post";
 
 // When you click on submit button.
 document.querySelector(".submit").addEventListener("click",(e)=>{
