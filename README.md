@@ -1,10 +1,10 @@
-# Leaderboard structure.
+# Leaderboard Hit the API.
 
-> This is a simple structure of a leaderboard application.
+> This is a simple structure of a leaderboard application that; Send and receive data from an API, uses API documentation and demostrated working with JSON files using JavaScript code asynchronous.
 
 ## Built with
 
-- HTML CSS
+- HTML CSS JAVASCRIPT.
 
 ## Additional Tools
 

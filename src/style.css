@@ -51,13 +51,21 @@ footer p {
 
 ul {
   border: solid 1px #000;
+  overflow: auto;
 }
 
 ul li {
   list-style: none;
   margin: 0;
+  margin-left: -40px;
 }
 
 ul li p {
   text-align: start;
+}
+li:nth-child(odd) {
+  background: #000;
+  color: #fff;
+  height: 30px;
+ 
 }
