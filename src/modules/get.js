@@ -1,7 +1,7 @@
 // A function to get data. 
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/wTWLt5kL1D7bko98XSeZ/scores/';
 
-const getPost=()=>{
+const getPost=async()=>{
     await fetch(url)
     .then((res)=>res.json())
     .then((data)=>{
