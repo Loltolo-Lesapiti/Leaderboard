@@ -9,3 +9,4 @@ const addPost=()=>{
         headers: { 'Content-type': 'application/JSON' },
     })
 }
+export default addPost;

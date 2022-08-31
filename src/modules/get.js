@@ -18,3 +18,4 @@ const getPost=()=>{
         }
     })
 }
+export default getPost;
