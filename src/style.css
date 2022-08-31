@@ -63,9 +63,9 @@ ul li {
 ul li p {
   text-align: start;
 }
+
 li:nth-child(odd) {
   background: #000;
   color: #fff;
   height: 30px;
- 
 }
