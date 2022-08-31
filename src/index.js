@@ -11,7 +11,7 @@ document.querySelector('.submit').addEventListener('click', (e) => {
 });
 
 // Add event listener to the refresh button.
-document.querySelector('.refresh').addEventListener('click', (e) => {
+document.querySelector('.refresh').addEventListener('click', () => {
   getPost();
 });
 window.addEventListener('load', () => {

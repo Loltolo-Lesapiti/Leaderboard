@@ -6,16 +6,15 @@ const getPost = async () => {
     .then((res) => res.json())
     .then((data) => {
       if (!data) {
-
-      } else {
-        const sortScore = data.result.sort((a, b) => b.score - a.score);
-        const results = document.querySelector('ul');
-        sortScore.forEach((game) => {
-          const li = document.createElement('li');
-          li.innerHTML = `<p>${game.user}: ${game.score}</p>`;
-          results.appendChild(li);
-        });
+        return;
       }
+      const sortScore = data.result.sort((a, b) => b.score - a.score);
+      const results = document.querySelector('ul');
+      sortScore.forEach((game) => {
+        const li = document.createElement('li');
+        li.innerHTML = `<p>${game.user}: ${game.score}</p>`;
+        results.appendChild(li);
+      });
     });
 };
 export default getPost;
