@@ -12,9 +12,40 @@ const getPost = async () => {
       const results = document.querySelector('ul');
       sortScore.forEach((game) => {
         const li = document.createElement('li');
-        li.innerHTML = `<p>${game.user}: ${game.score}</p>`;
-        results.appendChild(li);
+        if(index===0){
+        li.innerHTML = `<div class="circle">${index+1}</div><h2>${game.user}</h2>
+        <div class="rank">
+        <h4>${game.score}</h4>
+        <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
+        <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
+        <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
+        </div>`;
+        }else if(index===1){
+          li.innerHTML = `<div class="circle">${index+1}</div><h2>${game.user}</h2>
+          <div class="rank">
+          <h4>${game.score}</h4>
+          <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
+          <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
+          </div>`;
+        }else if(index==2){
+          li.innerHTML = `<div class="circle">${index+1}</div><h2>${game.user}</h2>
+          <div class="rank">
+          <h4>${game.score}</h4>
+          <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
+          </div>`;
+        }else{
+          li.innerHTML = `<div class="circle">${index+1}</div><h2>${game.user}</h2>
+          <div class="rank">
+          <h4>${game.score}</h4>
+          </div>`;
+        }
+        container.appendChild(li);
       });
+      if (container.offsetHeight >= 200) {
+          container.classList.add('overflow');
+      } else {
+        container.classList.remove('overflow');
+      }
     });
 };
 export default getPost;
