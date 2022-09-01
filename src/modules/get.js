@@ -10,7 +10,7 @@ const getPost = async () => {
       }
       const sortScore = data.result.sort((a, b) => b.score - a.score);
       const results = document.querySelector('ul');
-      sortScore.forEach((game) => {
+      sortScore.forEach((game, index) => {
         const li = document.createElement('li');
         if(index===0){
         li.innerHTML = `<div class="circle">${index+1}</div><h2>${game.user}</h2>
