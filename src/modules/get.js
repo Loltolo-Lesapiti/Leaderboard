@@ -12,29 +12,29 @@ const getPost = async () => {
       const container = document.querySelector('ul');
       sortScore.forEach((game, index) => {
         const li = document.createElement('li');
-        if(index===0){
-        li.innerHTML = `<div class="circle">${index+1}</div><h2>${game.user}</h2>
+        if (index === 0) {
+          li.innerHTML = `<div class="circle">${index + 1}</div><h2>${game.user}</h2>
         <div class="rank">
         <h4>${game.score}</h4>
         <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
         <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
         <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
         </div>`;
-        }else if(index===1){
-          li.innerHTML = `<div class="circle">${index+1}</div><h2>${game.user}</h2>
+        } else if (index === 1) {
+          li.innerHTML = `<div class="circle">${index + 1}</div><h2>${game.user}</h2>
           <div class="rank">
           <h4>${game.score}</h4>
           <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
           <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
           </div>`;
-        }else if(index==2){
-          li.innerHTML = `<div class="circle">${index+1}</div><h2>${game.user}</h2>
+        } else if (index === 2) {
+          li.innerHTML = `<div class="circle">${index + 1}</div><h2>${game.user}</h2>
           <div class="rank">
           <h4>${game.score}</h4>
           <i class="fa fa-trophy icon-large" aria-hidden="true"></i>
           </div>`;
-        }else{
-          li.innerHTML = `<div class="circle">${index+1}</div><h2>${game.user}</h2>
+        } else {
+          li.innerHTML = `<div class="circle">${index + 1}</div><h2>${game.user}</h2>
           <div class="rank">
           <h4>${game.score}</h4>
           </div>`;
@@ -42,7 +42,7 @@ const getPost = async () => {
         container.appendChild(li);
       });
       if (container.offsetHeight >= 200) {
-          container.classList.add('overflow');
+        container.classList.add('overflow');
       } else {
         container.classList.remove('overflow');
       }
