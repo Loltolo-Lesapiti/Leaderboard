@@ -9,7 +9,7 @@ const getPost = async () => {
         return;
       }
       const sortScore = data.result.sort((a, b) => b.score - a.score);
-      const results = document.querySelector('ul');
+      const container = document.querySelector('ul');
       sortScore.forEach((game, index) => {
         const li = document.createElement('li');
         if(index===0){
