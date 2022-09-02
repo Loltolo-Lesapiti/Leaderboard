@@ -1,6 +1,6 @@
-# Leaderboard Hit the API.
+# Leaderboard Application.
 
-> This is a simple structure of a leaderboard application that; Send and receive data from an API, uses API documentation and demostrated working with JSON files using JavaScript code asynchronous.
+> This is a styled leaderboard application that; Send and receive data from an API, uses API documentation and demostrated working with JSON files using JavaScript code asynchronous.
 
 ## Built with
 
